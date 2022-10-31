@@ -1,0 +1,11 @@
+body{
+    background-color: $neutral1;
+    font-family: "Inter";
+    margin: 0 5px;
+    overflow-x: hidden;
+}
+.hideMenu{
+    background-color: $neutral3;
+    opacity: 0.6;
+    z-index: -2;
+}

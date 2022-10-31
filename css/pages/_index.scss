@@ -1,0 +1,226 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 24px 0;
+    .openClose{
+        display: none;
+    }
+    ul{
+        display: flex;
+        list-style: none;
+        li{
+            padding-left: 62px;
+            color: $neutral3;
+        }
+    }
+}
+
+.gridNews{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "tl tl r"
+    "bl bm r";
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 100px;
+    .topLeft{
+        grid-area: tl;  
+        background: url(../../assets/images/image-web-3-desktop.jpg) center/cover;
+    }
+    .right{
+        grid-area: r;
+        background: $neutral4;
+        padding: 0 24px;
+        h2{
+            padding-top: 30px;
+            font-size: 2rem;
+            color: $primary1;
+            letter-spacing: 2px;
+        }
+        div{
+            padding: 16px 0;
+            font-size: 0.9rem;
+            line-height: 24px;
+            h3{
+                color: $neutral1;
+            }
+            p{
+                color: $neutral3;
+            }
+        }
+        .bbottom{
+            border-bottom: 1px solid $neutral3;
+        }
+        .pbottom{
+            padding-bottom: 0;
+        }
+    }
+    .bottomLeft{
+        grid-area: bl;
+        h1{
+            font-size: 4.5rem;
+            font-family: "InterBold";
+            font-weight: bold;
+            margin: 0 auto;
+        }
+    }
+    .bottomMiddle{
+        grid-area: bm;
+        position: relative;
+        p{
+            color: $neutral3;
+            font-size: 1.2rem;
+            line-height: 35px;
+        }
+        button{
+            position: absolute;
+            bottom: 0;
+            background: $primary2;
+            border: none;
+            color: $neutral1;
+            font-size: 1.4rem;
+            text-transform: uppercase;
+            padding: 14px 26px;
+            font-weight: 500;
+        }
+    }
+}
+
+.flexOrder{
+    display: flex;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+    img{
+        float: left;
+        padding-right: 15px;
+        max-width: 150px;
+        object-fit: cover;
+    }
+    .flexContent{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        h2, h3, p{
+            margin: 0;
+        }
+        h2{
+            color: $neutral2;
+            font-size: 2.4rem;
+            margin: 0;
+            padding-bottom: 24px;
+        }
+        h3{
+            font-size: 1rem;
+            padding-bottom: 24px;
+        }
+        p{
+            color: $neutral3;
+            line-height: 24px;
+            padding-right: 15px;
+        }
+    }
+}
+
+.attribution{
+    background: $neutral4;
+    margin: 0;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 0.7rem;
+    color: $neutral1;
+    text-align: center;
+    a{
+        text-decoration: none;
+        color: $primary1;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    body{
+        margin: 0 24px;
+    }
+    header{
+        width: 100%;
+        position: relative;
+        .openClose{
+            display: block;
+            position: relative;
+            top: 10px;
+        }
+        ul{
+            flex-direction: column;
+            position: absolute;
+            display: none;
+            right: 0;
+            transition: 1s ease-in-out;
+            min-height: 100vh;
+            z-index: 2;
+            background: $neutral1;
+            padding-top: 64px;
+            width: 50%;
+            li{
+                text-align: left;
+                padding: 20px 0;
+                font-size: 1.4rem;
+                color: $neutral4;
+            }
+        }
+        .openMenu{
+            display: block;
+        }
+    }
+    .gridNews{
+        display: block;
+        .topLeft{
+            width: 100%;
+            height: 400px;
+        }
+        .bottomLeft{
+            padding-top: 24px;
+            h1{
+                font-size: 2rem;
+            }
+        }
+        .bottomMiddle{
+            min-height: 250px;
+        }
+        .right{
+            padding-bottom: 24px;
+        }
+    }
+    .flexOrder{
+        display: block;
+        div{
+            height: 300px;
+            padding-bottom: 24px;
+        }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .gridNews{
+        .bottomLeft{
+            h1{
+                font-size: 4rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 970px) {
+    .gridNews{
+        .bottomLeft{
+            h1{
+                font-size: 3.6rem;
+            }
+        }
+    }
+}
