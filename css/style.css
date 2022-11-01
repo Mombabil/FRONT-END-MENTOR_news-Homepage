@@ -41,6 +41,12 @@ header ul {
 header ul li {
   padding-left: 62px;
   color: #5d5f79;
+  cursor: pointer;
+}
+
+header ul li:hover {
+  color: #e9ab53;
+  font-weight: 900;
 }
 
 .gridNews {
@@ -85,6 +91,12 @@ header ul li {
 
 .gridNews .right div h3 {
   color: #fffdfa;
+  cursor: pointer;
+}
+
+.gridNews .right div h3:hover {
+  color: #e9ab53;
+  font-weight: 900;
 }
 
 .gridNews .right div p {
@@ -131,6 +143,11 @@ header ul li {
   text-transform: uppercase;
   padding: 14px 26px;
   font-weight: 500;
+  cursor: pointer;
+}
+
+.gridNews .bottomMiddle button:hover {
+  background: #00001a;
 }
 
 .flexOrder {
@@ -169,6 +186,12 @@ header ul li {
 .flexOrder .flexContent h3 {
   font-size: 1rem;
   padding-bottom: 24px;
+  cursor: pointer;
+}
+
+.flexOrder .flexContent h3:hover {
+  color: #e9ab53;
+  font-weight: 900;
 }
 
 .flexOrder .flexContent p {

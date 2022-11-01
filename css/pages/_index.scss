@@ -13,6 +13,11 @@ header{
         li{
             padding-left: 62px;
             color: $neutral3;
+            cursor: pointer;
+            &:hover{
+                color: $primary1;
+                font-weight: 900;
+            }
         }
     }
 }
@@ -52,6 +57,11 @@ header{
             line-height: 24px;
             h3{
                 color: $neutral1;
+                cursor: pointer;
+                &:hover{
+                    color: $primary1;
+                    font-weight: 900;
+                }
             }
             p{
                 color: $neutral3;
@@ -91,6 +101,10 @@ header{
             text-transform: uppercase;
             padding: 14px 26px;
             font-weight: 500;
+            cursor: pointer;
+            &:hover{
+                background: $neutral4;
+            }
         }
     }
 }
@@ -124,6 +138,11 @@ header{
         h3{
             font-size: 1rem;
             padding-bottom: 24px;
+            cursor: pointer;
+            &:hover{
+                color: $primary1;
+                font-weight: 900;
+            }
         }
         p{
             color: $neutral3;
