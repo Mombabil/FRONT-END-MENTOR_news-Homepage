@@ -1,4 +1,4 @@
-const body = document.querySelector("body");
+const main = document.querySelector("main");
 const menu = document.querySelector(".closeMenu");
 const toggleMenu = document.querySelector(".openClose");
 
@@ -15,4 +15,5 @@ toggleMenu.addEventListener("click", () => {
   } else {
     toggleMenu.innerHTML = closeMenu;
   }
+  main.classList.toggle("hideMenu");
 });

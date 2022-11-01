@@ -30,7 +30,11 @@ header{
     padding-bottom: 100px;
     .topLeft{
         grid-area: tl;  
-        background: url(../../assets/images/image-web-3-desktop.jpg) center/cover;
+        img{
+            width: 100%;
+            object-fit: cover;
+            padding-bottom: 36px;
+        }
     }
     .right{
         grid-area: r;
@@ -159,14 +163,14 @@ header{
         ul{
             flex-direction: column;
             position: absolute;
-            display: none;
+            opacity: 0;
             right: 0;
-            transition: 1s ease-in-out;
-            min-height: 100vh;
             z-index: 2;
             background: $neutral1;
             padding-top: 64px;
-            width: 50%;
+            width: 0;
+            border-bottom-left-radius: 50px;
+            padding-bottom: 64px;
             li{
                 text-align: left;
                 padding: 20px 0;
@@ -175,14 +179,16 @@ header{
             }
         }
         .openMenu{
+            width: 50%;
+            opacity: 1;
             display: block;
+            transition: 0.5s ease-in;
         }
     }
     .gridNews{
         display: block;
         .topLeft{
             width: 100%;
-            height: 400px;
         }
         .bottomLeft{
             padding-top: 24px;
